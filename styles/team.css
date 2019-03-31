@@ -33,7 +33,7 @@ body .equipo1 .block a {
     flex-direction: row;
 }
 
-body .equipo1 .block a .info {
+body .equipo1 .block a .info1 {
     border-right: 8px solid #00d2be;
     width: 50%;
     transition: .3s;

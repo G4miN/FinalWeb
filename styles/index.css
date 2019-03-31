@@ -1,9 +1,3 @@
-body {
-    font-family: Formula1;
-    background-color: #EFEFEF;
-
-}
-
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -12,12 +6,17 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    font-family: Formula1;
+    background-color: #EFEFEF;
+}
+
 .sticky-top {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
 .site-header {
@@ -95,9 +94,10 @@ html {
     font-weight: normal;
 }
 
-.evento {
+body .evento {
     padding-left: 30px;
     padding-bottom: 30px;
+    margin-top: 65px;
     height: 150px;
     width: 100%;
     background-color: #000;
@@ -106,11 +106,11 @@ html {
     align-items: flex-end;
 }
 
-.pista {
+body .evento .pista {
     width: 100px;
 }
 
-.left {
+body .evento .left {
     margin-left: 10px;
     padding-left: 10px;
     border-top: 1px solid #fff;
@@ -120,28 +120,14 @@ html {
     align-items: flex-end;
 }
 
-h2 {
+body .evento .left h2 {
     font-size: 35px;
+    font-family: Formula1;
     color: white;
 }
 
-.year {
-    
-    margin-bottom: 15px;
-    margin-left: 5px;
-    height: 20px;
+body .evento .left .year {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    height: 25px;
 }
-
-.colorfurel {
-
-    background-color: #15151E;
-
-}
-
-h1{
-    padding: 10px;
-    margin: 40px;
-    margin-bottom: 20px;
-
-}
-

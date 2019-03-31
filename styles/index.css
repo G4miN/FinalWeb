@@ -1,0 +1,147 @@
+body {
+    font-family: Formula1;
+    background-color: #EFEFEF;
+
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    min-width: 750px;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.container {
+    max-width: 960px;
+}
+
+.contenedor {
+    margin-bottom: auto;
+    width: 100%;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+    background-color: #E10600;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+
+    color: #fff;
+    transition: ease-in-out color .15s;
+}
+
+/*Efecto de las letraqs en el navbar*/
+.site-header a:hover {
+    color: #15151E;
+    text-decoration: none;
+}
+
+#fotico {
+
+    display: block;
+    height: 25px;
+    width: 80px;
+    color: #fff;
+    transition: ease-in-out color .15s;
+
+}
+
+@font-face {
+    font-family: 'Formula1';
+    src: url('../letra/Formula1-Regular_web_0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.evento {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    height: 150px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.pista {
+    width: 100px;
+}
+
+.left {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-top: 1px solid #fff;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.year {
+    
+    margin-bottom: 15px;
+    margin-left: 5px;
+    height: 20px;
+}
+
+.colorfurel {
+
+    background-color: #15151E;
+
+}
+
+h1{
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 20px;
+
+}
+

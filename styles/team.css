@@ -146,28 +146,28 @@ body .equipo1 .block a .img .imgfondo {
     transition: all .3s;
 }
 
-body .equipo1 .block a:hover .info {
+body .equipo1 .block a:hover .info1 {
     background-color: #171717;
 }
 
-body .equipo1 .block a:hover .info .c-info .left .panel-up h2 {
+body .equipo1 .block a:hover .info1 .c-info .left .panel-up h2 {
     font-family: Formula1;
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info .c-info .left .panel-mid .lineal p {
+body .equipo1 .block a:hover .info1 .c-info .left .panel-mid .lineal p {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info .c-info .right .panels h3 {
+body .equipo1 .block a:hover .info1 .c-info .right .panels h3 {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info .c-info .right .panels p {
+body .equipo1 .block a:hover .info1 .c-info .right .panels p {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info .c-info .right .panels .icon {
+body .equipo1 .block a:hover .info1 .c-info .right .panels .icon {
     color: #fff;
 }
 

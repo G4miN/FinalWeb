@@ -1,0 +1,28 @@
+*{
+
+    margin:0px;
+    padding: 0px;
+    color: black;
+}
+
+.imagen{
+    width: 270px;
+    height: 150 px;
+    margin: 30 px;
+    background-image: url("../resources/mercedes.jpg");
+}
+
+.dato{
+
+    width: 370px;
+    height: 250px;
+    background-color: rgba(31,31, 31, 31, 0.9);
+    -webkit-transition: opacity 0.2s;
+    opacity:0;
+}
+
+.imagen:hover .dato{
+    width: 370px;
+    height: 250px;
+    opacity: 1;
+}

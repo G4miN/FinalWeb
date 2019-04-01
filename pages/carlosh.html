@@ -25,15 +25,10 @@
     </script>
     <!--Agregando estilos -->
     <link href="../styles/index.css" rel="stylesheet">
-    <link href="../styles/details.css" rel="stylesheet">
+    <link href="../styles/pilots.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- VueJs-->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <!-- FireBase -->
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
-    <title>Alfa Romeo</title>
+    <title>Carlos Hainz</title>
 </head>
 
 <body>
@@ -48,33 +43,43 @@
         </div>
     </nav>
 
-    <!-- Contenido -->
-    <div class="details">
+    <div class="piloto">
         <div class="wrapper">
-            <h1>Alfa Romeo</h1>
             <section class="section">
+                <div class="img">
+                    <div class="imgp" style="background-image: url('../resources/pilotos/piloto17.jpg');">
+                    </div>
+                    <div class="info">
+                        <h3>55</h3>
+                        <h4>Carlos Hainz</h4>
+                    </div>
+                </div>
                 <div class="info">
                     <div class="top">
-                        <img src="../resources/spon-sexta.png" alt="">
-                        <div class="datos">
-                            <a href="#">Perfil año por año</a><br />
-                            <a href="#">Mercancía oficial</a><br />
-                            <a href="#">Archivo de resultados</a>
-                        </div>
+                        <img src="../resources/pilotos/casco13.png" alt="">
+                        <h2>Mercancía oficial</h2>
                     </div>
                     <div class="down">
                         <table>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Nombre completo del equipo</h2>
+                                    <h2 class="h2">Equipo</h2>
                                 </td>
                                 <td>
-                                    <h2 class="par">Alfa Romeo Racing</h2>
+                                    <h2 class="par">McLaren</h2>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Base</h2>
+                                    <h2 class="h2">Pais</h2>
+                                </td>
+                                <td>
+                                    <h2 class="par">España</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="h2">Podiums</h2>
                                 </td>
                                 <td>
                                     <h2 class="par">N/A</h2>
@@ -82,42 +87,18 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Jefe del equipo</h2>
+                                    <h2 class="h2">Puntos</h2>
                                 </td>
                                 <td>
-                                    <h2 class="par">Frédéric Vasseur</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="h2">Jefe técnico</h2>
-                                </td>
-                                <td>
-                                    <h2 class="par">Simone Resta</h2>
+                                    <h2 class="par">171</h2>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Chasis</h2>
+                                    <h2 class="h2">Grand Prix ingresados</h2>
                                 </td>
                                 <td>
-                                    <h2 class="par">N/A</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="h2">Unidad de poder</h2>
-                                </td>
-                                <td>
-                                    <h2 class="par">N/A</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="h2">Primera entrada de equipo</h2>
-                                </td>
-                                <td>
-                                    <h2 class="par">1993</h2>
+                                    <h2 class="par">83</h2>
                                 </td>
                             </tr>
                             <tr>
@@ -130,105 +111,76 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Final de carrera más alto</h2>
+                                    <h2 class="h2">Mejor carrera final</h2>
                                 </td>
                                 <td>
-                                    <h2 class="par">1 (x1)</h2>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h2 class="h2">Posiciones Pole</h2>
-                                </td>
-                                <td>
-                                    <h2 class="par">1</h2>
+                                    <h2 class="par">4 (x1)</h2>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <h2 class="h2">Vueltas más rápidas</h2>
+                                    <h2 class="h2">Posición de rejilla más alta</h2>
                                 </td>
                                 <td>
                                     <h2 class="par">5</h2>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="h2">Dia de cumpleaños</h2>
+                                </td>
+                                <td>
+                                    <h2 class="par">01/09/1994</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="h2">Lugar de nacimiento</h2>
+                                </td>
+                                <td>
+                                    <h2 class="par">Madrid, España</h2>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                 </div>
-                <div class="pilotos">
-                    <a class="pil1" href="kimir.html">
-                        <div class="img">
-                            <div class="img1" style="background-image: url('../resources/pilotos/piloto11.jpg');"></div>
-                            <div class="info">
-                                <h3>7</h3>
-                                <h4>Kimi Räikkönen</h4>
-                                <h5>Alfa Romeo</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="pil1" href="antoniog.html">
-                        <div class="img">
-                            <div class="img1" style="background-image: url('../resources/pilotos/piloto12.jpg');"></div>
-                            <div class="info">
-                                <h3>99</h3>
-                                <h4>Antonio Giovinazzi</h4>
-                                <h5>Alfa Romeo</h5>
-                            </div>
-                        </div>
-                    </a>
+            </section>
+
+            <section class="contenido">
+                <div class="left">
+                    <h1>Biografia</h1>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                        porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                        non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                        enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                        pariatur?</p>
+                </div>
+                <div class="right">
+                    <img src="../resources/fel.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                        porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                        non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                        enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                        pariatur?</p>
                 </div>
             </section>
-
-            <img src="../resources/in/alfaromeo1.jpg" alt="" class="imgBig">
-
-            <section class="contenido">
-                <h1>En Perfil</h1>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                    commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                    molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            </section>
-
-            <img src="../resources/in/alfaromeo1.jpg" alt="" class="imgBig">
-
-            <section class="contenido">
-                <h2>2018</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <h2>2017</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <h2>2016</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <h2>2015</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </section>
+            <img src="../resources/in/mclaren.jpg" alt="" class="imgBig">
         </div>
     </div>
-    <!-- Footer -->
+
+    <!--Footer-->
     <footer class="contenedor py-5 colorfurel" width="500">
         <div class="row">
             <div class="col-12 col-md">

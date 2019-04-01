@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'Formula1-Bold';
+    src: url('../letra/Formula1-Bold_web_0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: 'TitilliumWeb';
     src: url('../letra/TitilliumWeb-Regular.ttf') format('truetype');
     font-style: normal;

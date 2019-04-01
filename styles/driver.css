@@ -16,6 +16,7 @@ body .driver {
 body .driver .wrapper {
     width: 95%;
     margin: auto;
+    margin-bottom: 37px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

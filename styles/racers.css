@@ -1,28 +1,59 @@
-*{
-
-    margin:0px;
-    padding: 0px;
-    color: black;
+body .wrapper {
+    padding: 10px;
+    background-color: #fff;
+    width: 95%;
+    margin: auto;
 }
 
-.imagen{
-    width: 270px;
-    height: 150 px;
-    margin: 30 px;
-    background-image: url("../resources/mercedes.jpg");
+body .wrapper h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0px;
 }
 
-.dato{
-
-    width: 370px;
-    height: 250px;
-    background-color: rgba(31,31, 31, 31, 0.9);
-    -webkit-transition: opacity 0.2s;
-    opacity:0;
+body .wrapper .post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.imagen:hover .dato{
-    width: 370px;
-    height: 250px;
-    opacity: 1;
+body .wrapper .post .princ {
+    width: 23%;
+    height: 200px;
+
+    background-repeat: no-repeat;
+    background-attachment: contain;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+body .wrapper .post .princ .princ-text {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body .wrapper .post .princ .princ-text h3 {
+    color: #f7f7f7;
+    font-size: 30px;
+}
+
+body .wrapper .post .princ .princ-text p {
+    padding: 10px;
+    font-size: 15px;
+    color: #f7f7f7;
+    text-align: justify;
+}
+
+body .wrapper .post .princ:hover .princ-text {
+    transform: translateY(0%);
 }

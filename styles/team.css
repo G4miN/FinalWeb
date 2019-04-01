@@ -34,7 +34,6 @@ body .equipo1 .block a {
 }
 
 body .equipo1 .block a .info1 {
-    border-right: 8px solid #00d2be;
     width: 50%;
     transition: .3s;
     display: flex;
@@ -138,7 +137,6 @@ body .equipo1 .block a .img {
 body .equipo1 .block a .img .imgfondo {
     width: 100%;
     height: 350px;
-    background-image: url("../resources/mercedes.jpg");
     background-repeat: no-repeat;
     background-attachment: contain;
     background-position: center;

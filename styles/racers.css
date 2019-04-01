@@ -75,10 +75,7 @@ body .wrapper .post .princ .princ-text .lineal p {
     color: #f7f7f7;
     text-align: justify;
 }
-<<<<<<< HEAD
-=======
 
 body .wrapper .post .princ:hover .princ-text {
     transform: translateY(0%);
 }
->>>>>>> 50140e60b84df6ec8df9fa27494354745002eaeb

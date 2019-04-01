@@ -23,12 +23,12 @@ body .driver .wrapper {
 
 body .driver .wrapper a {
     width: 23%;
-    height: 550px;
+    height: 500px;
 }
 
 body .driver .wrapper a .img {
     width: 100%;
-    height: 550px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }

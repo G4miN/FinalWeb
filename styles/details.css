@@ -9,7 +9,8 @@ body .details .wrapper {
 }
 
 body .details .wrapper h1 {
-    margin: 30px 0px;
+    padding: 30px 0px;
+    margin-left: 45px;
     font-family: Formula1;
     font-size: 2.5rem;
     font-weight: 100;
@@ -35,6 +36,7 @@ body .details .wrapper .section .info .top {
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 body .details .wrapper .section .info .top img {
@@ -116,12 +118,15 @@ body .details .wrapper .section .pilotos .pil1 .img .info {
 body .details .wrapper .section .pilotos .pil1 .img .info h3 {
     font-size: 50px;
     margin-bottom: 30px;
+    color: #000;
     font-family: Formula1;
 }
 
 body .details .wrapper .section .pilotos .pil1 .img .info h4 {
     font-weight: 100;
     font-family: Formula1;
+    font-size: 20px;
+    color: #000;
     margin-bottom: 5px;
 }
 
@@ -129,6 +134,7 @@ body .details .wrapper .section .pilotos .pil1 .img .info h5 {
     font-size: 12px;
     font-weight: 100;
     font-family: Formula1;
+    color: #000;
     text-transform: uppercase;
 }
 

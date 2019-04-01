@@ -23,8 +23,8 @@ body .equipo .block {
 }
 
 body .equipo .block h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 30px 0px;
+    margin-left: 35px;
     text-align: left;
     font-family: Formula1;
     font-size: 2rem;
@@ -64,7 +64,7 @@ body .equipo .block a .info .c-info .left .panel-up {
 }
 
 body .equipo .block a .info .c-info .left .panel-up img {
-    width: 40px;
+    width: 35px;
     height: 25px;
     margin: 0px 15px;
 }
@@ -88,7 +88,7 @@ body .equipo .block a .info .c-info .left .panel-mid .lineal {
 
 body .equipo .block a .info .c-info .left .panel-mid .lineal p {
     font-family: Formula1;
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px 0px;
     margin-left: 15px;
 }

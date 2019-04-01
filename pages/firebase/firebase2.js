@@ -13,7 +13,7 @@ var db = firebase.firestore();
 //creacion de tablas
 
 //posicion
-/*db.collection("Contenido").add({
+/*db.collection("ContenidoDOS").add({
     pos1: "1",
     pos2: "2",
     pos3: "3",
@@ -24,46 +24,46 @@ var db = firebase.firestore();
     pos8: "8",
     pos9: "9",
     pos10: "10",
-    num1: "77",
-    num2: "44",
-    num3: "33",
-    num4: "5",
-    num5: "16",
-    num6: "20",
-    num7: "27",
-    num8: "7",
-    num9: "18",
-    num10: "26",
-    dri1: "Valtteri Bottas",
-    dri2: "Lewis Hamilton",
-    dri3: "Max Verstappen",
-    dri4: "Sebastian Vettel",
-    dri5: "Charles Leclerc",
-    dri6: "Kevin Magnussen",
-    dri7: "Nico Hulkenberg",
-    dri8: "	Kimi Räikkönen",
-    dri9: "Lance Stroll",
-    dri10: "Daniil Kvyat",
-    car1: "Mercedes",
-    car2: "Mercedes",
-    car3: "RED BULL RACING HONDA",
-    car4: "FERRARI",
-    car5: "FERRARI",
-    car6: "HAAS FERRARI",
-    car7: "RENAULT",
-    car8: "ALFA ROMEO RACING FERRARI",
-    car9: "RACING POINT BWT MERCEDES",
-    car10: "SCUDERIA TORO ROSSO HONDA",
-    lap1: "58",
-    lap2: "58",
-    lap3: "58",
-    lap4: "58",
-    lap5: "58",
-    lap6: "58",
-    lap7: "57",
-    lap8: "57",
-    lap9: "57",
-    lap10: "57",
+    num1: "5",
+    num2: "77",
+    num3: "44",
+    num4: "10",
+    num5: "20",
+    num6: "27",
+    num7: "14",
+    num8: "2",
+    num9: "9",
+    num10: "31",
+    dri1: "Sebastian Vettel",
+    dri2: "Valtteri Bottas",
+    dri3: "Lewis Hamilton",
+    dri4: "Pierre Gasly",
+    dri5: "Kevin Magnussen",
+    dri6: "Nico Hulkenberg",
+    dri7: "Fernando Alonso",
+    dri8: "Stoffel Vandoorne",
+    dri9: "Marcus Ericsson",
+    dri10: "Esteban Ocon",
+    car1: "FERRARI",
+    car2: "MERCEDES",
+    car3: "MERCEDES",
+    car4: "SCUDERIA TORO ROSSO HONDA",
+    car5: "HAAS FERRARI",
+    car6: "RENAULT",
+    car7: "MCLAREN RENAULT",
+    car8: "MCLAREN RENAULT",
+    car9: "SAUBER FERRARI",
+    car10: "FORCE INDIA MERCEDES",
+    lap1: "57",
+    lap2: "57",
+    lap3: "57",
+    lap4: "57",
+    lap5: "57",
+    lap6: "57",
+    lap7: "56",
+    lap8: "56",
+    lap9: "56",
+    lap10: "56",
     tire1: "1:25:27.325",
     tire2: "+20.886s",
     tire3: "+22.520s",
@@ -91,10 +91,9 @@ var db = firebase.firestore();
     console.error("Error adding document: ", error);
 });*/
 
-
 var datos1 = document.getElementById('llenar1');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos1.innerHTML += `
@@ -113,7 +112,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos2 = document.getElementById('llenar2');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos2.innerHTML += `
@@ -131,7 +130,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos3 = document.getElementById('llenar3');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos3.innerHTML += `
@@ -149,7 +148,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos4 = document.getElementById('llenar4');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos4.innerHTML += `
@@ -167,7 +166,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos5 = document.getElementById('llenar5');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos5.innerHTML += `
@@ -185,7 +184,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos6 = document.getElementById('llenar6');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos6.innerHTML += `
@@ -203,7 +202,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos7 = document.getElementById('llenar7');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos7.innerHTML += `
@@ -221,7 +220,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos8 = document.getElementById('llenar8');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos8.innerHTML += `
@@ -239,7 +238,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos9 = document.getElementById('llenar9');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos9.innerHTML += `
@@ -257,7 +256,7 @@ db.collection("Contenido").get().then((querySnapshot) => {
 
 var datos10 = document.getElementById('llenar10');
 
-db.collection("Contenido").get().then((querySnapshot) => {
+db.collection("ContenidoDOS").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data()}`);
         datos10.innerHTML += `

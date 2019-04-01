@@ -3,21 +3,27 @@
     color: black;
 }
 
-body .equipo1 {
+body .site-header a:hover {
+    color: #15151E;
+    text-decoration: none;
+}
+
+<<<<<<< HEAD
+body .equipo {
     margin-bottom: 5px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-body .equipo1 .block {
+body .equipo .block {
     background-color: #fff;
     width: 94%;
     margin: auto;
     padding: 0px 10px;
 }
 
-body .equipo1 .block h1 {
+body .equipo .block h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: left;
@@ -25,7 +31,7 @@ body .equipo1 .block h1 {
     font-size: 2rem;
 }
 
-body .equipo1 .block a {
+body .equipo .block a {
     margin: auto;
     width: 95%;
     height: 350px;
@@ -33,81 +39,79 @@ body .equipo1 .block a {
     flex-direction: row;
 }
 
-body .equipo1 .block a .info1 {
+body .equipo .block a .info {
     width: 50%;
     transition: .3s;
     display: flex;
     align-items: center;
 }
 
-body .equipo1 .block a .info1 .c-info {
+body .equipo .block a .info .c-info {
     width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: row;
 }
 
-body .equipo1 .block a .info1 .c-info .left {
+body .equipo .block a .info .c-info .left {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-up {
+body .equipo .block a .info .c-info .left .panel-up {
     display: flex;
     flex-direction: row;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-up img {
+body .equipo .block a .info .c-info .left .panel-up img {
     width: 40px;
     height: 25px;
     margin: 0px 15px;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-up h2 {
+body .equipo .block a .info .c-info .left .panel-up h2 {
     font-family: Formula1;
     font-size: 22px;
     color: #000;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-mid {
+body .equipo .block a .info .c-info .left .panel-mid {
     margin: 10px 0px;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-mid .lineal {
+body .equipo .block a .info .c-info .left .panel-mid .lineal {
     margin: 10px 0px;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-mid .lineal p {
+body .equipo .block a .info .c-info .left .panel-mid .lineal p {
     font-family: Formula1;
     font-size: 14px;
     margin: 5px 0px;
     margin-left: 15px;
 }
 
-body .equipo1 .block a .info1 .c-info .left .panel-bot {}
+body .equipo .block a .info .c-info .left .panel-bot {}
 
-body .equipo1 .block a .info1 .c-info .left .panel-bot img {
+body .equipo .block a .info .c-info .left .panel-bot img {
     margin-left: 15px;
     width: 65%;
 }
 
-body .equipo1 .block a .info1 .c-info .right {
+body .equipo .block a .info .c-info .right {
     width: 50%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
 
-body .site-header a:hover {
-    color: #15151E;
-    text-decoration: none;
-}
-
+body .equipo .block a .info .c-info .right .panels {
+=======
 body .equipo1 .block a .info1 .c-info .right .panels {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     margin-bottom: 10px;
     width: 100%;
     display: flex;
@@ -115,18 +119,30 @@ body .equipo1 .block a .info1 .c-info .right .panels {
     align-items: center;
 }
 
+<<<<<<< HEAD
+body .equipo .block a .info .c-info .right .panels .icon {
+=======
 body .equipo1 .block a .info1 .c-info .right .panels .icon {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     font-size: 30px;
     color: #000;
 }
 
+<<<<<<< HEAD
+body .equipo .block a .info .c-info .right .panels h3 {
+=======
 body .equipo1 .block a .info1 .c-info .right .panels h3 {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     font-family: Formula1;
     font-size: 12px;
     margin-left: 10px;
 }
 
+<<<<<<< HEAD
+body .equipo .block a .info .c-info .right .panels p {
+=======
 body .equipo1 .block a .info1 .c-info .right .panels p {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     font-family: Formula1;
     font-size: 12px;
     text-align: center;
@@ -134,12 +150,20 @@ body .equipo1 .block a .info1 .c-info .right .panels p {
     text-align: right;
 }
 
+<<<<<<< HEAD
+body .equipo .block a .img {
+=======
 body .equipo1 .block a .img {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     width: 50%;
     overflow: hidden;
 }
 
+<<<<<<< HEAD
+body .equipo .block a .img .imgfondo {
+=======
 body .equipo1 .block a .img .imgfondo {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     width: 100%;
     height: 350px;
     background-repeat: no-repeat;
@@ -149,15 +173,42 @@ body .equipo1 .block a .img .imgfondo {
     transition: all .3s;
 }
 
+<<<<<<< HEAD
+body .equipo .block a:hover .info {
+    background-color: #171717;
+}
+
+body .equipo .block a:hover .info .c-info .left .panel-up h2 {
+=======
 body .equipo1 .block a:hover .info1 {
     background-color: #171717;
 }
 
 body .equipo1 .block a:hover .info1 .c-info1 .left .panel-up h2 {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     font-family: Formula1;
     color: #fff;
 }
 
+<<<<<<< HEAD
+body .equipo .block a:hover .info .c-info .left .panel-mid .lineal p {
+    color: #fff;
+}
+
+body .equipo .block a:hover .info .c-info .right .panels h3 {
+    color: #fff;
+}
+
+body .equipo .block a:hover .info .c-info .right .panels p {
+    color: #fff;
+}
+
+body .equipo .block a:hover .info .c-info .right .panels .icon {
+    color: #fff;
+}
+
+body .equipo .block a:hover .img .imgfondo {
+=======
 body .equipo1 .block a:hover .info1 .c-info1 .left .panel-mid .lineal p {
     color: #fff;
 }
@@ -175,11 +226,16 @@ body .equipo1 .block a:hover .info1 .c-info1 .right .panels .icon {
 }
 
 body .equipo1 .block a:hover .img .imgfondo {
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     transform: scale(1.15);
     transition: all .3s;
 }
 
+<<<<<<< HEAD
+.contenedor {
+=======
 .contenedor{
 
+>>>>>>> 414e8441706801679e43855850dd9c16c2e0ac6f
     background-color: #15151E;
 }

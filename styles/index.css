@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Formula1';
+    src: url('../letra/Formula1-Regular_web_0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url('../letra/TitilliumWeb-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -55,10 +69,7 @@ body {
     width: 100%;
 }
 
-/*
-   * Custom translucent site header
-   */
-
+/*Custom translucent site header*/
 .site-header {
     background-color: #E10600;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -85,20 +96,7 @@ body {
 
 }
 
-@font-face {
-    font-family: 'Formula1';
-    src: url('../letra/Formula1-Regular_web_0.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'TitilliumWeb';
-    src: url('../letra/TitilliumWeb-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-
+/* Barra de Eventos */
 body .evento {
     padding-left: 30px;
     padding-bottom: 30px;
@@ -138,6 +136,5 @@ body .evento .left .year {
 }
 
 .contenedor {
-
     background-color: #15151E;
 }

@@ -66,7 +66,6 @@ body {
 }
 
 .site-header a {
-
     color: #fff;
     transition: ease-in-out color .15s;
 }
@@ -78,7 +77,6 @@ body {
 }
 
 #fotico {
-
     display: block;
     height: 25px;
     width: 80px;
@@ -90,6 +88,13 @@ body {
 @font-face {
     font-family: 'Formula1';
     src: url('../letra/Formula1-Regular_web_0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'TitilliumWeb';
+    src: url('../letra/TitilliumWeb-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -132,7 +137,7 @@ body .evento .left .year {
     height: 25px;
 }
 
-.contenedor{
+.contenedor {
 
     background-color: #15151E;
 }

@@ -146,3 +146,23 @@ body .evento .left .year {
     background-color: #15151E;
     width: 98%;
 }
+
+.inicio {
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.inicio>video {
+    width: 100%;
+    height: 93vh;
+}
+
+.inicio>.centrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

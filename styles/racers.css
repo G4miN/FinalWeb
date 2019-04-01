@@ -19,9 +19,9 @@ body .wrapper .post {
 }
 
 body .wrapper .post .princ {
-    width: 23%;
-    height: 200px;
-
+    width: 28%;
+    height: 350px;
+    margin: 0px 10px;
     background-repeat: no-repeat;
     background-attachment: contain;
     background-position: center;
@@ -33,6 +33,7 @@ body .wrapper .post .princ {
 body .wrapper .post .princ .princ-text {
     position: absolute;
     bottom: 0;
+    padding: 10px;
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
     transform: translateY(100%);
@@ -44,7 +45,8 @@ body .wrapper .post .princ .princ-text {
 
 body .wrapper .post .princ .princ-text h3 {
     color: #f7f7f7;
-    font-size: 30px;
+    font-size: 25px;
+    margin-top: -105px;
 }
 
 body .wrapper .post .princ .princ-text p {
@@ -57,3 +59,11 @@ body .wrapper .post .princ .princ-text p {
 body .wrapper .post .princ:hover .princ-text {
     transform: translateY(0%);
 }
+
+h4{
+
+    font-size: 12px;
+    color: #f7f7f7;
+    margin-bottom: 205px;
+}
+

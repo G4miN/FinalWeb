@@ -34,7 +34,6 @@ body .equipo1 .block a {
 }
 
 body .equipo1 .block a .info1 {
-    border-right: 8px solid #00d2be;
     width: 50%;
     transition: .3s;
     display: flex;
@@ -143,7 +142,6 @@ body .equipo1 .block a .img {
 body .equipo1 .block a .img .imgfondo {
     width: 100%;
     height: 350px;
-    background-image: url("../resources/mercedes.jpg");
     background-repeat: no-repeat;
     background-attachment: contain;
     background-position: center;
@@ -155,24 +153,24 @@ body .equipo1 .block a:hover .info1 {
     background-color: #171717;
 }
 
-body .equipo1 .block a:hover .info1 .c-info .left .panel-up h2 {
+body .equipo1 .block a:hover .info1 .c-info1 .left .panel-up h2 {
     font-family: Formula1;
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info1 .c-info .left .panel-mid .lineal p {
+body .equipo1 .block a:hover .info1 .c-info1 .left .panel-mid .lineal p {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info1 .c-info .right .panels h3 {
+body .equipo1 .block a:hover .info1 .c-info1 .right .panels h3 {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info1 .c-info .right .panels p {
+body .equipo1 .block a:hover .info1 .c-info1 .right .panels p {
     color: #fff;
 }
 
-body .equipo1 .block a:hover .info1 .c-info .right .panels .icon {
+body .equipo1 .block a:hover .info1 .c-info1 .right .panels .icon {
     color: #fff;
 }
 

@@ -38,6 +38,7 @@ body .details .wrapper .section .info .top {
 }
 
 body .details .wrapper .section .info .top img {
+    height: 100px;
     width: 270px;
     margin-right: 10px;
 }

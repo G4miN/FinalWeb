@@ -23,8 +23,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- VueJs-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
     <!--Agregando estilos -->
-    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/resultado.css">
+
     <title>Final de WEB</title>
 
 </head>
@@ -33,7 +41,7 @@
     <!--Barra de navegacion-->
     <nav class="site-header sticky-top py-1" style="width: 100%">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2 d-none d-md-inline-block" href="index.html"><img id="fotico" src="resources/formula.png"
+            <a class="py-2 d-none d-md-inline-block" href="index.html"><img id="fotico" src="../resources/formula.png"
                     alt="Formula 1" width="90" /> </a>
 
             <a class="py-2 d-none d-md-inline-block" href="pages/racers.html">Races</a>
@@ -42,383 +50,111 @@
         </div>
     </nav>
     <!--Contenido-->
-    <table class="resultsarchive-table">
-            <thead>
+
+    <div class="listado">
+        <div class="tituloimagen">
+
+            <h1>FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2019- RACE RESULT</h1> <img class="fot"
+                src="../resources/rolex.png">
+
+
+        </div>
+        <h5> 14 - 17 Mar 2019 - Melbourne Grand Prix Circuit, Melbourne</h5>
+        <table class="table">
+            <thead class="thead-dark">
                 <tr>
-                    <th class="limiter"></th>
-                    <th><abbr title="Position">Pos</abbr></th>
-                    <th class="hide-for-mobile"><abbr title="Number">No</abbr></th>
-                    <th>Driver</th>
-                    <th class=" hide-for-tablet">Car</th>
-                    <th class=" hide-for-mobile">Laps</th>
-                    <th>Time/Retired</th>
-                    <th><abbr title="Points">PTS</abbr></th>
-                    <th class="limiter"></th>
+                    <th scope="col">POS</th>
+                    <th scope="col">NO</th>
+                    <th scope="col">DRIVER</th>
+                    <th scope="col">CAR</th>
+                    <th scope="col">LAP</th>
+                    <th scope="col">TIME/RETIRED</th>
+                    <th scope="col">PTS</th>
                 </tr>
             </thead>
-    
             <tbody>
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">1</td>
-                    <td class="dark hide-for-mobile">77</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Valtteri</span>
-                        <span class="hide-for-mobile">Bottas</span>
-                        <span class="uppercase hide-for-desktop">BOT</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Mercedes</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">1:25:27.325</td>
-                    <td class="bold">26</td>
-                    <td class="limiter"></td>
+                <tr id="llenar1">
+
                 </tr>
-            
-    
                 <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">2</td>
-                    <td class="dark hide-for-mobile">44</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Lewis</span>
-                        <span class="hide-for-mobile">Hamilton</span>
-                        <span class="uppercase hide-for-desktop">HAM</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Mercedes</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">+20.886<span class="suffix seconds">s</span></td>
-                    <td class="bold">18</td>
-                    <td class="limiter"></td>
+                    <th scope="row" id="llenar2">2</th>
+                    <td>44</td>
+                    <td>Lewis Hamilton</td>
+                    <td>Mercedes</td>
+                    <td>58</td>
+                    <td>+20.886s</td>
+                    <td>18</td>
                 </tr>
-            
-    
                 <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">3</td>
-                    <td class="dark hide-for-mobile">33</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Max</span>
-                        <span class="hide-for-mobile">Verstappen</span>
-                        <span class="uppercase hide-for-desktop">VER</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Red Bull Racing Honda</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">+22.520<span class="suffix seconds">s</span></td>
-                    <td class="bold">15</td>
-                    <td class="limiter"></td>
+                    <th scope="row" id="llenar3">3</th>
+                    <td>33</td>
+                    <td>Max Verstappen</td>
+                    <td>RED BULL RACING HONDA</td>
+                    <td>58</td>
+                    <td>+22.520s</td>
+                    <td>15</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">4</td>
-                    <td class="dark hide-for-mobile">5</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Sebastian</span>
-                        <span class="hide-for-mobile">Vettel</span>
-                        <span class="uppercase hide-for-desktop">VET</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Ferrari</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">+57.109<span class="suffix seconds">s</span></td>
-                    <td class="bold">12</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar4">4</th>
+                <td>5</td>
+                <td>Sebastian Vettel</td>
+                <td>FERRARI</td>
+                <td>58</td>
+                <td>+57.109s</td>
+                <td>12</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">5</td>
-                    <td class="dark hide-for-mobile">16</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Charles</span>
-                        <span class="hide-for-mobile">Leclerc</span>
-                        <span class="uppercase hide-for-desktop">LEC</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Ferrari</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">+58.230<span class="suffix seconds">s</span></td>
-                    <td class="bold">10</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar5">5</th>
+                <td>16</td>
+                <td>Charles Leclerc</td>
+                <td>FERRARI</td>
+                <td>58</td>
+                <td>+58.230s</td>
+                <td>10</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">6</td>
-                    <td class="dark hide-for-mobile">20</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Kevin</span>
-                        <span class="hide-for-mobile">Magnussen</span>
-                        <span class="uppercase hide-for-desktop">MAG</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Haas Ferrari</td>
-                    <td class="bold hide-for-mobile">58</td>
-                    <td class="dark bold">+87.156<span class="suffix seconds">s</span></td>
-                    <td class="bold">8</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar6">6</th>
+                <td>20</td>
+                <td>Kevin Magnussen</td>
+                <td>HAAS FERRARI</td>
+                <td>58</td>
+                <td>+87.156s</td>
+                <td>8</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">7</td>
-                    <td class="dark hide-for-mobile">27</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Nico</span>
-                        <span class="hide-for-mobile">Hulkenberg</span>
-                        <span class="uppercase hide-for-desktop">HUL</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Renault</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">6</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar7">7</th>
+                <td>27</td>
+                <td>Nico Hulkenberg</td>
+                <td>RENAULT</td>
+                <td>57</td>
+                <td>+1 lap</td>
+                <td>6</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">8</td>
-                    <td class="dark hide-for-mobile">7</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Kimi</span>
-                        <span class="hide-for-mobile">Räikkönen</span>
-                        <span class="uppercase hide-for-desktop">RAI</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Alfa Romeo Racing Ferrari</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">4</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar8">8</th>
+                <td>7</td>
+                <td>Kimi Räikkönen</td>
+                <td>ALFA ROMEO RACING FERRARI</td>
+                <td>57</td>
+                <td>+1 lap</td>
+                <td>4</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">9</td>
-                    <td class="dark hide-for-mobile">18</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Lance</span>
-                        <span class="hide-for-mobile">Stroll</span>
-                        <span class="uppercase hide-for-desktop">STR</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Racing Point BWT Mercedes</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">2</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar9">9</th>
+                <td>18</td>
+                <td>Lance Stroll</td>
+                <td>RACING POINT BWT MERCEDES</td>
+                <td>57</td>
+                <td>+1 lap</td>
+                <td>2</td>
                 </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">10</td>
-                    <td class="dark hide-for-mobile">26</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Daniil</span>
-                        <span class="hide-for-mobile">Kvyat</span>
-                        <span class="uppercase hide-for-desktop">KVY</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Scuderia Toro Rosso Honda</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">1</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">11</td>
-                    <td class="dark hide-for-mobile">10</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Pierre</span>
-                        <span class="hide-for-mobile">Gasly</span>
-                        <span class="uppercase hide-for-desktop">GAS</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Red Bull Racing Honda</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">12</td>
-                    <td class="dark hide-for-mobile">4</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Lando</span>
-                        <span class="hide-for-mobile">Norris</span>
-                        <span class="uppercase hide-for-desktop">NOR</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">McLaren Renault</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">13</td>
-                    <td class="dark hide-for-mobile">11</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Sergio</span>
-                        <span class="hide-for-mobile">Perez</span>
-                        <span class="uppercase hide-for-desktop">PER</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Racing Point BWT Mercedes</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">14</td>
-                    <td class="dark hide-for-mobile">23</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Alexander</span>
-                        <span class="hide-for-mobile">Albon</span>
-                        <span class="uppercase hide-for-desktop">ALB</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Scuderia Toro Rosso Honda</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">15</td>
-                    <td class="dark hide-for-mobile">99</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Antonio</span>
-                        <span class="hide-for-mobile">Giovinazzi</span>
-                        <span class="uppercase hide-for-desktop">GIO</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Alfa Romeo Racing Ferrari</td>
-                    <td class="bold hide-for-mobile">57</td>
-                    <td class="dark bold">+1<span class="suffix"> lap</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">16</td>
-                    <td class="dark hide-for-mobile">63</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">George</span>
-                        <span class="hide-for-mobile">Russell</span>
-                        <span class="uppercase hide-for-desktop">RUS</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Williams Mercedes</td>
-                    <td class="bold hide-for-mobile">56</td>
-                    <td class="dark bold">+2<span class="suffix"> laps</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">17</td>
-                    <td class="dark hide-for-mobile">88</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Robert</span>
-                        <span class="hide-for-mobile">Kubica</span>
-                        <span class="uppercase hide-for-desktop">KUB</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Williams Mercedes</td>
-                    <td class="bold hide-for-mobile">55</td>
-                    <td class="dark bold">+3<span class="suffix"> laps</span></td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">NC</td>
-                    <td class="dark hide-for-mobile">8</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Romain</span>
-                        <span class="hide-for-mobile">Grosjean</span>
-                        <span class="uppercase hide-for-desktop">GRO</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Haas Ferrari</td>
-                    <td class="bold hide-for-mobile">29</td>
-                    <td class="dark bold">DNF</td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">NC</td>
-                    <td class="dark hide-for-mobile">3</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Daniel</span>
-                        <span class="hide-for-mobile">Ricciardo</span>
-                        <span class="uppercase hide-for-desktop">RIC</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">Renault</td>
-                    <td class="bold hide-for-mobile">28</td>
-                    <td class="dark bold">DNF</td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
-                </tr>
-            
-    
-                <tr>
-    
-                    <td class="limiter"></td>
-                    <td class="dark">NC</td>
-                    <td class="dark hide-for-mobile">55</td>
-                    <td class="dark bold">
-                        <span class="hide-for-tablet">Carlos</span>
-                        <span class="hide-for-mobile">Sainz</span>
-                        <span class="uppercase hide-for-desktop">SAI</span>
-                    </td>
-                    <td class="semi-bold uppercase hide-for-tablet">McLaren Renault</td>
-                    <td class="bold hide-for-mobile">9</td>
-                    <td class="dark bold">DNF</td>
-                    <td class="bold">0</td>
-                    <td class="limiter"></td>
+                <th scope="row" id="llenar10">10</th>
+                <td>26</td>
+                <td>Daniil Kvyat</td>
+                <td>SCUDERIA TORO ROSSO HONDA</td>
+                <td>57</td>
+                <td>+1 lap</td>
+                <td>1</td>
                 </tr>
             </tbody>
         </table>
+
+    </div>
+
 
     <!--Footer-->
     <footer class="contenedor py-5 colorfurel" width="500">
@@ -426,7 +162,7 @@
             <div class="col-12 col-md">
 
                 <a class="py-2" href="#">
-                    <a class="py-2 d-none d-md-inline-block" href=""><img src="resources/ff.png" alt="Formula 1"
+                    <a class="py-2 d-none d-md-inline-block" href=""><img src="../resources/ff.png" alt="Formula 1"
                             width="90" style="margin-left: 100px;" /></a>
                 </a>
                 <small class="d-block mb-3 text-muted" style="margin-left: 100px;">© 2017-2019</small>
@@ -471,6 +207,7 @@
             </div>
         </div>
     </footer>
+    <script src="../firebase/firebase.js"></script>
 </body>
 
 </html>

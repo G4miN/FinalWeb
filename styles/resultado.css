@@ -1,0 +1,17 @@
+.fot {
+    margin-left: 100px;
+    width: 190px;
+    height: 85px;
+
+}
+
+.tituloimagen {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+h5 {
+    padding: 20px;
+    font-size: 15px;
+}

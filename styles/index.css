@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: Formula1;
-    background-color: #EFEFEF;
+    background-color: #15151E;
 }
 
 .sticky-top {
@@ -165,4 +165,21 @@ body .evento .left .year {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.blan {
+    font-size: 55px;
+    color: #EFEFEF;
+    margin-bottom: 200px;
+}
+
+.vid {
+
+    opacity: 0.3;
+}
+
+h6 {
+    font-size: 15px;
+    color: #EFEFEF;
+    margin-top: -150px;
 }

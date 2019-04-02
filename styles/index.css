@@ -29,7 +29,7 @@ html {
 
 body {
     font-family: Formula1;
-    background-color: #15151E;
+    background-color: #EFEFEF;
 }
 
 .sticky-top {
@@ -182,4 +182,8 @@ h6 {
     font-size: 15px;
     color: #EFEFEF;
     margin-top: -150px;
+}
+
+.fondo {
+    background-color: #15151E;
 }
